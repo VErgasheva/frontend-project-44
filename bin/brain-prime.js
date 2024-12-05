@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import Prime from '../src/MG/brain-prime.js';
+import getprime from '../src/MindGames/brain-prime.js';
 
-Prime();
+getprime();

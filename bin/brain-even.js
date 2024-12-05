@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import Even from '../src/MG/brain-even';
+import geteven from '../src/MindGames/brain-even';
 
-Even();
+geteven();
