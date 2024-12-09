@@ -13,7 +13,7 @@ const generateTask = () => {
       x = temp;
     }
     return x;
-}
+  }
   const num1 = getRandomNumber();
   const num2 = getRandomNumber();
   const rightAnswer = getGCD(num1, num2);
