@@ -8,13 +8,12 @@ const generateTask = () => {
     let x = a;
     let y = b;
     while (y !== 0) {
-        const temp = y;
-        y = x % y;
-        x = temp;
+      const temp = y;
+      y = x % y;
+      x = temp;
     }
     return x;
 }
-
   const num1 = getRandomNumber();
   const num2 = getRandomNumber();
   const rightAnswer = getGCD(num1, num2);
@@ -28,4 +27,3 @@ const getgcd = () => {
 };
 
 export default getgcd;
-
