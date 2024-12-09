@@ -4,7 +4,7 @@ const rules = 'Find the greatest common divisor of given numbers.';
 const generateTask = () => {
   const getRandomNumber = () => Math.floor(Math.random() * 100) + 1;
 
-  const gcd(a, b) {
+  function getGCD(a, b) {
     let x = a;
     let y = b;
     while (y !== 0) {
