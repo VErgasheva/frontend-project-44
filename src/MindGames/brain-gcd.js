@@ -4,14 +4,16 @@ const rules = 'Find the greatest common divisor of given numbers.';
 const generateTask = () => {
   const getRandomNumber = () => Math.floor(Math.random() * 100) + 1;
 
-  const getGCD = (a, b) => {
-    while (b !== 0) {
-      const temp = b;
-      b = a % b;
-      a = temp;
+  const gcd(a, b) {
+    let x = a;
+    let y = b;
+    while (y !== 0) {
+        const temp = y;
+        y = x % y;
+        x = temp;
     }
-    return a;
-  };
+    return x;
+}
 
   const num1 = getRandomNumber();
   const num2 = getRandomNumber();
@@ -26,3 +28,4 @@ const getgcd = () => {
 };
 
 export default getgcd;
+

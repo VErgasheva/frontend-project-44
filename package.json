@@ -19,5 +19,9 @@
   },
   "dependencies": {
     "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "eslint": "^9.16.0",
+    "eslint-plugin-vue": "^9.32.0"
   }
 }

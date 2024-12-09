@@ -2,7 +2,7 @@ import mindgames from '../index.js';
 
 const rules = 'What is the result of the expression?';
 const generateTask = () => {
-  const num1 = Math.floor(Math.random() * 50) + 1
+  const num1 = Math.floor(Math.random() * 50) + 1;
   const num2 = Math.floor(Math.random() * 50) + 1;
   const operators = ['+', '-', '*'];
   const randomOperator = operators[Math.floor(Math.random() * operators.length)];

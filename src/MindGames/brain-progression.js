@@ -8,7 +8,7 @@ const generateTask = () => {
   const step = Math.floor(Math.random() * 10) + 1;
 
   const progression = [];
-  for (let i = 0; i < progressionLength; i++) {
+  for (let i = 0; i < progressionLength; i += 1) {
     progression.push(start + i * step);
   }
 
@@ -16,7 +16,7 @@ const generateTask = () => {
   const correctAnswer = String(progression[hiddenIndex]);
   progression[hiddenIndex] = '..';
 
-  const task = progression.join(' '); 
+  const task = progression.join(' ');
   return [task, correctAnswer];
 };
 
