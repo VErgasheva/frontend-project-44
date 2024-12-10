@@ -1,10 +1,12 @@
 import mindgames from '../index.js';
+import getrandom from './utils.js';
+import geteven from './even.js';
 
 const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const generateTask = () => {
-  const number = Math.floor(Math.random() * 100) + 1;
-  const rightAnswer = number % 2 === 0 ? 'yes' : 'no';
+  const number = getrandom();
+  const rightAnswer = geteven();
   const task = String(number);
   return [task, rightAnswer];
 };
