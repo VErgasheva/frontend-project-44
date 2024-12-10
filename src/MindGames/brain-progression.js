@@ -1,5 +1,4 @@
 import mindgames from '../index.js';
-import getrandom from '../utils.js';
 import getprogres from '../progress.js';
 
 const rules = 'What number is missing in the progression?';
@@ -7,7 +6,7 @@ const rules = 'What number is missing in the progression?';
 const generateTask = () => {
   const progressionLength = Math.floor(Math.random() * 6) + 5;
 
-  const progression = getprogres();
+  const progression = getprogres(2,3,50);
 
   const hiddenIndex = Math.floor(Math.random() * progressionLength);
   const correctAnswer = String(progression[hiddenIndex]);
