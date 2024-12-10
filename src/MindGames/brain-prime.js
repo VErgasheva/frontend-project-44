@@ -1,5 +1,5 @@
 import mindgames from '../index.js';
-import getrandom  from './utils.js';
+import getrandom  from '../utils.js';
 
 const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 

@@ -1,6 +1,6 @@
 import mindgames from '../index.js';
-import getrandom from './utils.js';
-import geteventwo from './even.js';
+import getrandom from '../utils.js';
+import geteventwo from '../even.js';
 
 const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
 

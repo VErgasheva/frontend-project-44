@@ -1,6 +1,6 @@
 import mindgames from '../index.js';
-import getrandom  from './utils.js';
-import getprogres  from './progress.js';
+import getrandom  from '../utils.js';
+import getprogres  from '../progress.js';
 
 const rules = 'What number is missing in the progression?';
 

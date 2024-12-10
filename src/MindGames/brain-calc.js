@@ -1,6 +1,6 @@
 import mindgames from '../index.js';
-import getrandom  from './utils.js';
-import getrcalculate  from './funccalc.js';
+import getrandom  from '../utils.js';
+import getrcalculate  from '../funccalc.js';
 
 const rules = 'What is the result of the expression?';
 const generateTask = () => {
