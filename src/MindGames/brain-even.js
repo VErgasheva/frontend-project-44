@@ -6,7 +6,7 @@ const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const generateTask = () => {
   const number = getrandom();
-  const rightAnswer = geteventwo();
+  const rightAnswer = geteventwo(number);
   const task = String(number);
   return [task, rightAnswer];
 };
