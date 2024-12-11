@@ -1,9 +1,8 @@
 import mindgames from '../index.js';
-import getrandom  from '../utils.js';
+import getrandom from '../utils.js';
 
 const rules = 'Find the greatest common divisor of given numbers.';
 const generateTask = () => {
-
   function getGCD(a, b) {
     let x = a;
     let y = b;
