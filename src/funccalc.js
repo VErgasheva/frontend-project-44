@@ -10,5 +10,5 @@ function getcalculate(num1, num2, operator) {
       throw new Error(`Unknown operator: ${operator}`);
   }
 }
-  
+
 export default getcalculate;
