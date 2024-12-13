@@ -1,5 +1,5 @@
 import mindgames from '../index.js';
-import getrandom from '../utils.js';
+import getRandom from '../utils.js';
 
 const rules = 'Find the greatest common divisor of given numbers.';
 const generateTask = () => {
@@ -13,8 +13,8 @@ const generateTask = () => {
     }
     return x;
   }
-  const num1 = getrandom();
-  const num2 = getrandom();
+  const num1 = getRandom();
+  const num2 = getRandom();
   const rightAnswer = getGCD(num1, num2);
 
   const task = `${num1} ${num2}`;

@@ -1,5 +1,5 @@
-function geteventwo(number) {
-  return number % 2 === 0 ? 'yes' : 'no';
+function isEven(number) {
+  return number % 2 === 0;
 }
 
-export default geteventwo;
+export default isEven;

@@ -1,12 +1,12 @@
 import mindgames from '../index.js';
-import getrandom from '../utils.js';
-import getprogres from '../progress.js';
+import getRandom from '../utils.js';
+import getProgression from '../progress.js';
 
 const rules = 'What number is missing in the progression?';
 
 const generateTask = () => {
-  const progressionLength = getrandom(6, 5);
-  const progression = getprogres(getrandom(50, 1), getrandom(10, 1), progressionLength);
+  const progressionLength = getRandom(6, 5);
+  const progression = getProgression(getRandom(50, 1), getRandom(10, 1), progressionLength);
   const hiddenIndex = Math.floor(Math.random() * progressionLength);
   const correctAnswer = String(progression[hiddenIndex]);
   progression[hiddenIndex] = '..';

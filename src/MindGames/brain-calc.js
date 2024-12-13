@@ -1,15 +1,26 @@
 import mindgames from '../index.js';
-import getrandom from '../utils.js';
-import getrcalculate from '../funccalc.js';
+import getRandom from '../utils.js';
 
+function getCalculate(num1, num2, operator) {
+  switch (operator) {
+    case '+':
+      return num1 + num2;
+    case '-':
+      return num1 - num2;
+    case '*':
+      return num1 * num2;
+    default:
+      throw new Error(`Unknown operator: ${operator}`);
+  }
+}
 const rules = 'What is the result of the expression?';
 const generateTask = () => {
-  const num1 = getrandom();
-  const num2 = getrandom();
+  const num1 = getRandom();
+  const num2 = getRandom();
   const operators = ['+', '-', '*'];
-  const randomOperator = operators[getrandom(operators.length - 1, 0)];
+  const randomOperator = operators[getRandom(operators.length - 1, 0)];
 
-  const rightAnswer = getrcalculate(num1, num2, randomOperator);
+  const rightAnswer = getCalculate(num1, num2, randomOperator);
 
   const task = `${num1} ${randomOperator} ${num2}`;
   return [task, String(rightAnswer)];

@@ -1,4 +1,4 @@
-function getprogres(start, step, length) {
+function getProgression(start, step, length) {
   const progression = [];
   for (let i = 0; i < length; i += 1) {
     progression.push(start + i * step);
@@ -6,4 +6,4 @@ function getprogres(start, step, length) {
   return progression;
 }
 
-export default getprogres;
+export default getProgression;

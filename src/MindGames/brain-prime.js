@@ -1,5 +1,5 @@
 import mindgames from '../index.js';
-import getrandom from '../utils.js';
+import getRandom from '../utils.js';
 
 const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
@@ -12,7 +12,7 @@ const isPrime = (number) => {
 };
 
 const generateTask = () => {
-  const number = Math.floor(getrandom()) + 1;
+  const number = Math.floor(getRandom()) + 1;
   const task = String(number);
   const rightAnswer = isPrime(number) ? 'yes' : 'no';
   return [task, rightAnswer];

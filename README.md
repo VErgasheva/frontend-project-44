@@ -1,4 +1,6 @@
 ### Hexlet tests and linter status:
+[![Maintainability](https://api.codeclimate.com/v1/badges/11fe4174ea23c96b4261/maintainability)](https://codeclimate.com/github/VErgasheva/frontend-project-44/maintainability)
+
 [![Actions Status](https://github.com/VErgasheva/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/VErgasheva/frontend-project-44/actions)
 
 Brain-even: https://asciinema.org/a/EWNzJYhBcLAvNVMDt2TQeHOQU
